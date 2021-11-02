@@ -1,6 +1,7 @@
-import { gql } from "apollo-server";
-
-const typeDefs = gql`
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const apollo_server_1 = require("apollo-server");
+const typeDefs = (0, apollo_server_1.gql) `
   "A track is a group of Modules that teaches about a specific topic"
   type Track {
     id: ID!
@@ -27,5 +28,5 @@ const typeDefs = gql`
     tracksForHome: [Track!]!
   }
 `;
-
-export default typeDefs;
+exports.default = typeDefs;
+//# sourceMappingURL=schema.js.map
